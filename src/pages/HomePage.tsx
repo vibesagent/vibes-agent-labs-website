@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
 import { MountainScene } from '../components/MountainScene'
 import { drops } from '../data/site'
+import { getDropHref } from '../utils/dropHref'
 
 export function HomePage() {
   return (
@@ -16,7 +16,7 @@ export function HomePage() {
               <div className="drop-row__content">
                 {drop.number ? <p className="drop-row__number">{drop.number}</p> : null}
                 <h2 className="drop-row__title">
-                  <Link to={`/labs/${drop.slug}`}>{drop.title}</Link>
+                  <a href={getDropHref(drop)}>{drop.title}</a>
                 </h2>
                 <p className="drop-row__summary">{drop.summary}</p>
               </div>

@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
 import { stageLabels } from '../data/site'
 import type { Drop } from '../data/site'
+import { getDropHref } from '../utils/dropHref'
 
 interface DropCardProps {
   drop: Drop
@@ -32,9 +32,9 @@ export function DropCard({ drop }: DropCardProps) {
       <p className="drop-card__summary">{drop.summary}</p>
 
       <div className="link-row">
-        <Link className="link-chip link-chip--internal" to={`/labs/${drop.slug}`}>
-          View drop
-        </Link>
+        <a className="link-chip link-chip--internal" href={getDropHref(drop)}>
+          Visit project
+        </a>
         {externalLinks
           .filter(([, href]) => Boolean(href))
           .map(([key, href]) => (

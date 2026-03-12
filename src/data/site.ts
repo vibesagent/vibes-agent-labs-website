@@ -29,7 +29,7 @@ export const siteMeta = {
 export const drops: Drop[] = [
   {
     slug: 'canadian-housing-difference',
-    title: 'Canadian Housing Difference',
+    title: 'The Past Decade in Canadian Housing',
     launched: 'March 2026',
     stage: 'prototype',
     summary: 'A lens on regional differences in Canadian housing pressure and policy shape.',
@@ -48,14 +48,9 @@ export const drops: Drop[] = [
     launched: 'March 2026',
     stage: 'prototype',
     summary: 'A warm, continuous feed for coordinating multiple agents in one running stream.',
-    note:
-      'The current Labs version is focused on interface and orchestration feel rather than the backend runtime.',
-    detail: [
-      'Swarmfeed treats agent orchestration like a timeline instead of a pile of terminals. The point is visibility, steering, and a calmer way to direct parallel work.',
-      'This first public pass is intentionally narrow. It is a UX thesis before it becomes a platform thesis.',
-      'If the interaction model proves itself, it can graduate out of Labs and become a standalone product with its own identity.',
-    ],
-    tags: ['agent interface', 'orchestration', 'prototype', 'multi-agent'],
+    note: '',
+    detail: [],
+    tags: ['agent interface'],
     links: {},
   },
 ]
