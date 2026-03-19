@@ -54,7 +54,10 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   color: var(--ink);
-  background: transparent;
+  background-color: var(--paper);
+  background-image: linear-gradient(180deg, #f7f0e5 0%, #f4e9db 44%, #efe1d2 100%);
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 body::before {
@@ -92,17 +95,18 @@ svg {
 #root {
   min-height: 100vh;
   min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
 }
 
 .site-shell {
   position: relative;
   isolation: isolate;
+  flex: 1 0 auto;
   min-height: 100vh;
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
-  padding-top: env(safe-area-inset-top);
-  padding-bottom: env(safe-area-inset-bottom);
 }
 
 .shell-inner {
@@ -981,12 +985,7 @@ button:focus-visible {
     --drops-top-gap: clamp(18px, 6vw, 28px);
   }
 
-  .site-shell {
-    min-height: auto;
-  }
-
   .site-main {
-    flex: 0 0 auto;
     padding-top: 20px;
     padding-bottom: 28px;
   }
