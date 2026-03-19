@@ -21,8 +21,6 @@ export const siteMeta = {
   email: 'ian@vibesagent.com',
   links: {
     github: 'https://github.com/vibesagent',
-    x: 'https://x.com/vibesagent',
-    substack: 'https://vibesagent.substack.com',
   },
 }
 

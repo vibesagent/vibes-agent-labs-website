@@ -15,12 +15,6 @@ export function Layout() {
           <a className="footer-link" href={siteMeta.links.github} rel="noreferrer" target="_blank">
             GitHub
           </a>
-          <a className="footer-link" href={siteMeta.links.x} rel="noreferrer" target="_blank">
-            X
-          </a>
-          <a className="footer-link" href={siteMeta.links.substack} rel="noreferrer" target="_blank">
-            Substack
-          </a>
         </div>
       </footer>
     </div>
