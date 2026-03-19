@@ -16,14 +16,6 @@ export function DropPage() {
     return <NotFoundPage />
   }
 
-  if (drop.slug === 'swarmfeed') {
-    return (
-      <section className="detail-stack">
-        <h1 className="detail-header__title">{drop.title}</h1>
-      </section>
-    )
-  }
-
   const detailLinks = Object.entries(drop.links).filter(([, href]) => Boolean(href))
 
   return (
