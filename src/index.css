@@ -968,11 +968,27 @@ button:focus-visible {
 
 @media (max-width: 720px) {
   :root {
-    --content-width: min(1120px, calc(100% - 20px));
+    --content-width: min(980px, calc(100% - 32px));
+    --drops-top-gap: clamp(18px, 6vw, 28px);
+  }
+
+  .site-shell {
+    min-height: auto;
   }
 
   .site-main {
-    padding-top: 24px;
+    flex: 0 0 auto;
+    padding-top: 20px;
+    padding-bottom: 28px;
+  }
+
+  .landing,
+  .identity {
+    gap: 18px;
+  }
+
+  .drop-list {
+    gap: 20px;
   }
 
   .hero__copy,
@@ -1008,6 +1024,10 @@ button:focus-visible {
   .footer-minimal {
     grid-template-columns: 1fr;
     display: grid;
+  }
+
+  .drop-row {
+    padding: 18px 0;
   }
 
   .hero__meta,
