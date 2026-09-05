@@ -15,6 +15,13 @@ export interface Drop {
   links: Partial<Record<DropLinkKey, string>>
 }
 
+export interface UseCase {
+  slug: string
+  title: string
+  summary: string
+  href: string
+}
+
 export const siteMeta = {
   brand: 'VibesAgent',
   program: 'VibesAgent Labs',
@@ -25,22 +32,20 @@ export const siteMeta = {
 }
 
 export const drops: Drop[] = [
+]
+
+export const useCases: UseCase[] = [
   {
-    slug: 'canadian-housing-difference',
-    title: 'The Past Decade in Canadian Housing',
-    launched: 'March 2026',
-    stage: 'labs',
-    summary: 'A lens on regional differences in Canadian housing pressure and policy shape.',
-    note: 'This experiment compares affordability dynamics across Canadian markets and captures the edge cases that matter.',
-    detail: [
-      'The project maps core housing signals to highlight where supply, rates, and regulation diverge the most.',
-      'Each card and list row is tuned to surface what is changing, not just what is expensive.',
-      'This is a labs release for a more practical housing-intelligence narrative: readable, fast, and useful.',
-    ],
-    tags: ['housing', 'markets', 'labs'],
-    links: {
-      live: 'https://vibesagent.com/canadian-housing',
-    },
+    slug: 'crm-system',
+    title: 'CRM System',
+    summary: 'Customer relationship workflow running in a dedicated Cloudflare Worker.',
+    href: 'https://crm.vibesagent.com',
+  },
+  {
+    slug: 'ticket-system',
+    title: 'Ticket System',
+    summary: 'Support ticket workflow running in a dedicated Cloudflare Worker.',
+    href: 'https://tickets.vibesagent.com',
   },
 ]
 

@@ -29,7 +29,7 @@ export function DropCard({ drop }: DropCardProps) {
         <p className="drop-card__date">{drop.launched}</p>
       </div>
 
-      <p className="drop-card__summary">{drop.summary}</p>
+      {/* <p className="drop-card__summary">{drop.summary}</p> */}
 
       <div className="link-row">
         <a className="link-chip link-chip--internal" href={getDropHref(drop)}>

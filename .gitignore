@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local browser review captures (keep public assets in public/)
+.playwright-mcp/
+/home-*.png
+/vibes-agent-labs-*.png
